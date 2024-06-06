@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <style>
+       body { text-align:center; }
+        h1{
+            font-family: 'Long Cang', cursive;
+            font-size: 60px;
+        }
+
+        @media only screen and (max-width: 800px) {
+            img{
+                width: 100%;
+        
+        }
+        h1{
+            font-size: 45px;
+        }
+        
+            }
+        #mySidenav a {
+        position: absolute;
+        left: -100px;
+        transition: 0.3s;
+        padding: 15px;
+        width: 100px;
+        text-decoration: none;
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+        border-radius: 0 5px 5px 0;
+        font-weight: bold;
+        }
+        
+        #mySidenav a:hover {
+        left: 0;
+        }
+        
+        #one {
+        top: 20px;
+        background-color: #7e92eb;
+        }
+        
+        #two{
+        top: 80px;
+        background-color: #4b9de0;
+        }
+        
+      
+        .bg{
+            background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,0.6222864145658263) 0%, rgba(241,165,91,1) 100%);
+        }
+
+        
+.balloon {
+  display:inline-block;
+   width:120px;
+  height:145px;
+  background:hsl(215,50%,65%);
+  border-radius:80%;
+  position:relative;
+  box-shadow:inset -10px -10px 0 rgba(0,0,0,0.07);
+  margin:20px 30px;
+  transition:transform 0.5s ease;
+  z-index:10;
+  animation:balloons 4s ease-in-out infinite;
+  transform-origin:bottom center;
+}
+
+@keyframes balloons {
+  0%,100%{ transform:translateY(0) rotate(-4deg); }
+  50%{ transform:translateY(-25px) rotate(4deg); }
+}
+
+
+.balloon:before {
+  content:"▲";
+  font-size:20px;
+  color:hsl(215,30%,50%);
+  display:block;
+  text-align:center;
+  width:100%;
+  position:absolute;
+  bottom:-12px;
+  z-index:-100;
+}
+
+.balloon:after {
+ display:inline-block; top:153px;
+  position:absolute;
+  height:250px;
+  width:1px;
+  margin:0 auto;
+  content:"";
+  background:rgba(0,0,0,0.2); 
+}
+
+.balloon:nth-child(2){ background:hsl(245,40%,65%); animation-duration:3.5s; }
+.balloon:nth-child(2):before { color:hsl(245,40%,65%);  }
+
+.balloon:nth-child(3){ background:hsl(139,50%,60%); animation-duration:3s; }
+.balloon:nth-child(3):before { color:hsl(139,30%,50%);  }
+
+.balloon:nth-child(4){ background:hsl(59,50%,58%); animation-duration:4.5s; }
+.balloon:nth-child(4):before { color:hsl(59,30%,52%);  }
+
+.balloon:nth-child(5){ background:hsl(23,55%,57%); animation-duration:5s; }
+.balloon:nth-child(5):before { color:hsl(23,44%,46%);  }
+
+
+
+    </style>
+</head>
+
+<body class="bg">
+    <div >
+    <header align="center">
+        <h1>Hello Annamalaiiiii!</h1>
+    </header>
+ 
+    </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="letter.html" id="one">Happy</a>
+      <a href="gallery.html" id="two">Birthday</a>
+     
+    </div>
+    
+    <div style="margin-left:80px;">
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        
+    </div>
+    
+    <div>
+        
+        <center>
+        <img src="fox.png" width="35%" >
+            
+    </center>
+    <p>Enjoy listening to this..Annamalaiiii!!! </p>
+    <audio controls autoplay>
+        <source src="images/hbdaudio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+      
+    </div>
+    </body>
+    </html> 
+    
+</body>
+</html>

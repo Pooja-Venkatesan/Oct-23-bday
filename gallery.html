@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 5%;
+  font-family: Arial;
+  background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,0.6222864145658263) 0%, rgba(241,165,91,1) 100%);
+        }
+
+
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+  width: 20%;
+  padding: 20px;
+  
+}
+@media only screen and (max-width: 800px) {
+    .column{
+        display: block;
+        width: 90%;
+        
+
+    }
+    img{
+        margin:0 auto;
+      
+
+    }
+}
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+h1{
+            font-family: 'Long Cang', cursive;
+            font-size: 60px;
+        }
+.end{
+    position: relative;
+    left: 40%;
+}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+  <h1>Gallery</h1>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="1.jpeg"  style="width:100%" >
+  </div>
+  <div class="column">
+    <img src="2.jpeg"  style="width:100%" >
+  </div>
+  <div class="column">
+    <img src="3.jpeg"  style="width:90%" >
+  </div>
+  <div class="column">
+    <img src="5.jpeg"  style="width:110%" >
+  </div>
+
+<div class="column">
+    <img src="4.jpeg"  style="width:105%" >
+  </div>
+  <div class="column">
+    <img src="6.jpeg"  style="width:100%" >
+  </div>
+<div class="column">
+    <img src="12.jpeg"  style="width:80%" >
+  </div>
+
+
+
+<div class="column">
+    <img src="11.jpeg"  style="width:100%" >
+  </div>
+  <div class="column">
+    <img src="9.jpeg"  style="width:100%" >
+  </div>
+
+
+<div class="column">
+    <img src="10.jpeg"  style="width:110%" >
+  </div>
+</div>
+
+  <div class="end">
+    <img src="8.jpeg"  style="width:20%" >
+  </div>
+
+
+
+
+</body>
+</html>
